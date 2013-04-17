@@ -1,0 +1,5 @@
+/* update the projects list */
+$("#projects").html('<%= escape_javascript(render("projects")) %>');
+
+/* reset the form */
+$('#project-name').val('');

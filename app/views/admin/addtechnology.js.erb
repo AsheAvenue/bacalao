@@ -1,0 +1,5 @@
+/* update the technologies list */
+$("#technologies").html('<%= escape_javascript(render("technologies")) %>');
+
+/* reset the form */
+$('#technology-name').val('');
