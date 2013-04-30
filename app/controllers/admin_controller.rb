@@ -3,10 +3,10 @@ class AdminController < ApplicationController
   layout 'admin'
   
   def people
-    
+    @people = Person.all
   end
   
-  def manage
+  def projectstechnologies
     @projects = Project.order("position asc")
     @technologies = Technology.order("position asc")
   end
